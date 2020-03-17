@@ -1,11 +1,21 @@
 <html>
 <head>
+<script>
+var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+</script>
+<meta name="viewport" content="width=1024">
 <title>
 Programming books
 </title>
 </head>
 <body style="height:200px; background-color:pink">
-<h1>Programming books in pdf form</h1>
+<h1><b>Programming books in pdf form</b></h1>
+<br>
 <div style="overflow:hidden; float:left;">
 <div class="java" style="overflow:hidden; float:left">
 <img src="JAVA.JPG" height="308" width="231">
